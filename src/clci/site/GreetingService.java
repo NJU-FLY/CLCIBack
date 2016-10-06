@@ -1,4 +1,4 @@
-package com.wrox.site;
+package clci.site;
 
 public interface GreetingService
 {

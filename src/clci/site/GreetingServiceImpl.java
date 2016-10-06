@@ -1,4 +1,4 @@
-package com.wrox.site;
+package clci.site;
 
 import org.springframework.stereotype.Service;
 

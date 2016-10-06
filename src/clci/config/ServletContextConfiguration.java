@@ -1,4 +1,4 @@
-package com.wrox.config;
+package clci.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,7 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 @ComponentScan(
-        basePackages = "com.wrox.site",
+        basePackages = "clci.site",
         useDefaultFilters = false,
         includeFilters = @ComponentScan.Filter(Controller.class)
 )

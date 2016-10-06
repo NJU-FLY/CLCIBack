@@ -1,4 +1,4 @@
-package com.wrox.config;
+package clci.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
