@@ -45,8 +45,7 @@ public class ServletContextConfiguration extends WebMvcConfigurerAdapter {
         converters.add(new SourceHttpMessageConverter<>());
 
 
-        MappingJackson2HttpMessageConverter jsonConverter =
-                new MappingJackson2HttpMessageConverter();
+        MappingJackson2HttpMessageConverter jsonConverter = new MappingJackson2HttpMessageConverter();
         jsonConverter.setSupportedMediaTypes(Arrays.asList(
                 new MediaType("application", "json"),
                 new MediaType("text", "json")

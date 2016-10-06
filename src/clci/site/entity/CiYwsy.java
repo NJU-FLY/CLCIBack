@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
- * Created by Administrator on 2016/10/7.
+ * Created by fly on 2016/10/7.
  */
 @Entity
 @Table(name = "ci_ywsy", schema = "clci", catalog = "")

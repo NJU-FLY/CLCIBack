@@ -15,7 +15,7 @@ public class Bootstrap implements WebApplicationInitializer
     @Override
     public void onStartup(ServletContext container) throws ServletException
     {
-        container.getServletRegistration("default").addMapping("*.html");
+        container.getServletRegistration("default").addMapping("*.html","*.js","*.css");
 
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
         rootContext.register(RootContextConfiguration.class);
@@ -23,8 +23,7 @@ public class Bootstrap implements WebApplicationInitializer
 
         AnnotationConfigWebApplicationContext servletContext = new AnnotationConfigWebApplicationContext();
         servletContext.register(ServletContextConfiguration.class);
-        ServletRegistration.Dynamic dispatcher = container.addServlet("springDispatcher", new DispatcherServlet(servletContext)
-        );
+        ServletRegistration.Dynamic dispatcher = container.addServlet("springDispatcher", new DispatcherServlet(servletContext));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
     }

@@ -5,7 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 /**
- * Created by Administrator on 2016/10/7.
+ * Created by fly on 2016/10/7.
  */
 @Entity
 public class Ywlxdm {
