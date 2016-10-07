@@ -3,9 +3,10 @@ package clci.site.entity;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
- * Created by fly on 2016/10/7.
+ * Created by Administrator on 2016/10/7.
  */
 @Entity
 public class Wzlxdm {
@@ -22,8 +23,8 @@ public class Wzlxdm {
         this.dmmc = dmmc;
     }
 
-    @Basic
-    @Column(name = "DM", nullable = true, length = 2)
+    @Id
+    @Column(name = "DM", nullable = false, length = 2)
     public String getDm() {
         return dm;
     }

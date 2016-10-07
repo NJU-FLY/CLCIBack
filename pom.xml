@@ -15,6 +15,7 @@
         <jackson.version>2.4.2</jackson.version>
         <log4j.version>2.0.2</log4j.version>
         <spring.framework.version>4.0.6.RELEASE</spring.framework.version>
+        <hibernate.validator.version>5.1.2.Final</hibernate.validator.version>
     </properties>
 
     <dependencies>
@@ -116,6 +117,7 @@
             <scope>compile</scope>
         </dependency>
 
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -155,15 +157,10 @@
                     <groupId>xml-apis</groupId>
                     <artifactId>xml-apis</artifactId>
                 </exclusion>
-                <exclusion>
-                    <groupId>org.jboss.logging</groupId>
-                    <artifactId>jboss-logging</artifactId>
-                </exclusion>
             </exclusions>
         </dependency>
 
     </dependencies>
-
 
 
     <build>

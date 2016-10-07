@@ -37,6 +37,7 @@ public class ServletContextConfiguration extends WebMvcConfigurerAdapter {
     @Inject
     ObjectMapper objectMapper;
 
+    // 数据格式转换器
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(new ByteArrayHttpMessageConverter());
@@ -62,7 +63,7 @@ public class ServletContextConfiguration extends WebMvcConfigurerAdapter {
 //                .mediaType("json", MediaType.APPLICATION_JSON);
 //    }
 
-
+    // 默认视图转换器
     @Bean
     public RequestToViewNameTranslator viewNameTranslator() {
         return new DefaultRequestToViewNameTranslator();
