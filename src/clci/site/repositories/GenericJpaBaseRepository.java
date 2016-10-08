@@ -1,4 +1,4 @@
-package clci.site.repositories.base;
+package clci.site.repositories;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

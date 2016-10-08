@@ -1,7 +1,7 @@
 package clci.site.repositories.impls;
 
 import clci.site.entities.CiLysy;
-import clci.site.repositories.base.GenericJpaBaseRepository;
+import clci.site.repositories.GenericJpaBaseRepository;
 import clci.site.repositories.interfaces.LysyRepository;
 import org.springframework.stereotype.Repository;
 

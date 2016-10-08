@@ -1,4 +1,4 @@
-package clci.site.repositories.base;
+package clci.site.repositories;
 
 import org.springframework.validation.annotation.Validated;
 
