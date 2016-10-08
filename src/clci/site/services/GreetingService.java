@@ -1,4 +1,4 @@
-package clci.site;
+package clci.site.services;
 
 public interface GreetingService
 {

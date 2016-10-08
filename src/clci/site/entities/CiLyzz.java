@@ -1,9 +1,9 @@
-package clci.site.entity;
+package clci.site.entities;
 
 import javax.persistence.*;
 
 /**
- * Created by Administrator on 2016/10/7.
+ * Created by fly on 2016/10/7.
  */
 @Entity
 @Table(name = "ci_lyzz", schema = "clci", catalog = "")

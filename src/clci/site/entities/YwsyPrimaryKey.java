@@ -1,4 +1,4 @@
-package clci.site.entity;
+package clci.site.entities;
 
 import java.io.Serializable;
 

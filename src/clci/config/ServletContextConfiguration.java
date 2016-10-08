@@ -28,7 +28,7 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 @ComponentScan(
-        basePackages = "clci.site",
+        basePackages = "clci.site.controller",
         useDefaultFilters = false,
         includeFilters = @ComponentScan.Filter(Controller.class)
 )

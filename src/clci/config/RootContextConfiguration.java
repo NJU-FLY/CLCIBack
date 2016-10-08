@@ -37,8 +37,7 @@ import java.util.Map;
 )
 @ComponentScan(
         basePackages = "clci.site",
-        excludeFilters =
-        @ComponentScan.Filter({Controller.class, ControllerAdvice.class})
+        excludeFilters = @ComponentScan.Filter({Controller.class})
 )
 public class RootContextConfiguration {
 
@@ -73,7 +72,7 @@ public class RootContextConfiguration {
                 new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(adapter);
         factory.setDataSource(this.clciResource());
-        factory.setPackagesToScan("clci.site.entity");
+        factory.setPackagesToScan("clci.site.entities");
         factory.setSharedCacheMode(SharedCacheMode.ENABLE_SELECTIVE);
         factory.setValidationMode(ValidationMode.NONE);
         factory.setJpaPropertyMap(properties);

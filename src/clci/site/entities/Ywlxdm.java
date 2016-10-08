@@ -1,4 +1,4 @@
-package clci.site.entity;
+package clci.site.entities;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -6,10 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by Administrator on 2016/10/7.
+ * Created by fly on 2016/10/7.
  */
 @Entity
-public class Wzdm {
+public class Ywlxdm {
     private String dmmc;
     private String dm;
 
@@ -38,10 +38,10 @@ public class Wzdm {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Wzdm wzdm = (Wzdm) o;
+        Ywlxdm ywlxdm = (Ywlxdm) o;
 
-        if (dmmc != null ? !dmmc.equals(wzdm.dmmc) : wzdm.dmmc != null) return false;
-        if (dm != null ? !dm.equals(wzdm.dm) : wzdm.dm != null) return false;
+        if (dmmc != null ? !dmmc.equals(ywlxdm.dmmc) : ywlxdm.dmmc != null) return false;
+        if (dm != null ? !dm.equals(ywlxdm.dm) : ywlxdm.dm != null) return false;
 
         return true;
     }

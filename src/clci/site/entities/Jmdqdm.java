@@ -1,4 +1,4 @@
-package clci.site.entity;
+package clci.site.entities;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by Administrator on 2016/10/7.
+ * Created by fly on 2016/10/7.
  */
 @Entity
 public class Jmdqdm {
