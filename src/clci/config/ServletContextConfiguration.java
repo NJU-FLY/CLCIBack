@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.ByteArrayHttpMessageConverter;
 import org.springframework.http.converter.FormHttpMessageConverter;
@@ -27,6 +28,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
+@EnableSpringDataWebSupport
 @ComponentScan(
         basePackages = "clci.site.controller",
         useDefaultFilters = false,

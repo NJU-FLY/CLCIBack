@@ -1,12 +1,12 @@
 package clci.site.repositories.interfaces;
 
-import clci.site.entities.CiLysy;
-import clci.site.repositories.GenericRepository;
+import clci.site.entities.CiYwsy;
+import clci.site.repositories.BaseRepository;
 
 /**
  * Created by fly on 2016/10/8.
  */
 
-public interface YwsyRepository extends GenericRepository<String, CiLysy> {
+public interface YwsyRepository extends BaseRepository<CiYwsy, String> {
 
 }

@@ -8,7 +8,7 @@ import javax.inject.Inject;
 @Service
 public class GreetingServiceImpl implements GreetingService
 {
-    @Inject
+//    @Inject
     LysyRepository lysyRepository;
     @Override
     public String getGreeting(String name)

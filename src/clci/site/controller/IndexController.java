@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.inject.Inject;
+import java.util.List;
 
 /**
  * Created by fly on 2016/10/8.
@@ -21,8 +22,8 @@ public class IndexController {
     @ResponseBody
     @RequestMapping(value = "/test", params = {"name"})
     public CiLysy helloName(@RequestParam("name") String name) {
-       CiLysy lysy = lysyRepository.get("11A001199801001");
+       List<CiLysy> lysy = lysyRepository.groupByRegion();
         System.out.println();
-        return lysy;
+        return new CiLysy();
     }
 }
