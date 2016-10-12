@@ -22,8 +22,9 @@ public class IndexController {
     @ResponseBody
     @RequestMapping(value = "/test", params = {"name"})
     public CiLysy helloName(@RequestParam("name") String name) {
-       List<CiLysy> lysy = lysyRepository.groupByRegion();
+//       List<CiLysy> lysy = lysyRepository.groupByRegion();
         System.out.println();
+        lysyRepository.test(new CiLysy());
         return new CiLysy();
     }
 }
